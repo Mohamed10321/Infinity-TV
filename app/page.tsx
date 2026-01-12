@@ -15,6 +15,20 @@ export default function Home() {
   return (
     <main>
 
+      {/* 🔒 SEO SECTION (Invisible for users, visible for Google) */}
+      <section className="sr-only">
+        <h1>Premium IPTV Streaming Service</h1>
+        <p>
+          Infinity TV is a premium IPTV streaming service offering live TV
+          channels, movies, series and sports with high quality HD and 4K
+          streaming.
+        </p>
+        <p>
+          Watch live television on Smart TV, Android, iOS, PC and tablets with a
+          fast, stable and secure IPTV service including a 24 hour free trial.
+        </p>
+      </section>
+
       {/* HERO */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -22,9 +36,9 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="text-center py-24 px-6 max-w-5xl mx-auto"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h2 className="text-4xl md:text-6xl font-bold mb-6">
           Premium IPTV Experience
-        </h1>
+        </h2>
         <p className="text-gray-400 text-lg mb-8">
           Ultra stable IPTV service. Compatible with all devices.
         </p>
